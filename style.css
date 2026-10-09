@@ -9,10 +9,70 @@
 }
 
 @font-face {
-  font-family: 'Futura-Book';
+  font-family: 'FuturaBook';
   src: url('tipografia/Futura-Book.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }   
 
+
+body {
+    background-color: var(--color-fondo);
+}
+
+h1{
+font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 6.9rem;
+color: var(--color-morado-base);
+}
+
+h2{
+    font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 5.8rem;
+color: var(--color-morado-base);
+}
+
+h3{
+    font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 4.4rem;
+color: var(--color-morado-base);
+}
+
+h4{
+    font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 3.3rem;
+color: var(--color-morado-base);
+}
+
+h5, nav a{ /* ESTE ES EL HEADER Y BOTONES*/
+    font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 2rem;
+color: var(--color-morado-base);
+}
+
+a:hover{
+    color: var(--color-amarillo);
+}
+
+p {
+    font-family: "FuturaBook", sans-serif;
+    font-style: normal;
+    font-size: 2.3rem;
+}
+
+.texto-chico {
+    font-family: "FuturaBook", sans-serif;
+    font-style: normal;
+    font-size: 2.3rem;
+}
 
