@@ -8,4 +8,11 @@
   --color-fondo: #FFF5E4;
 }
 
+@font-face {
+  font-family: 'Futura-Book';
+  src: url('tipografia/Futura-Book.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}   
+
 
