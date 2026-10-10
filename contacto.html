@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/webp" href="imagenes/Carnalitos_Logo.webp">
+  </head>
+
+  <body>
+    <header class="sombra-morada">
+      <div class="header-container">
+        <a href="#" class="logo-link">
+          <img src="imagenes/Carnalitos_Logo.webp" alt="Carnalitos" class="logo-imagen">
+        </a>
+        <nav>
+          <a href="#">SOBRE NOSOTROS</a>
+          <a href="#">NUESTROS PRODUCTOS</a>
+          <a href="#">NUESTRA INSIPIRACIÓN</a>
+          <a href="#">CONTACTO</a>
+        </nav>
+
+      </div>
+    </header>
+
+    <main>
+      <div class="titulo-seccion-container">
+        <img
+          src="imagenes/titulos/titulo_contacto.webp"
+          alt="Contacto"
+          class="titulo-imagen"
+          width="500px" height="auto"
+        />
+      </div>
+      <div class ="contenido">
+        <div class="contacto-grid">
+          <!-- FORMULARIO (Caja Verde Claro con Borde Punteado) -->
+          <section class="formulario-card">
+            <form id="contactForm">
+              <div class="campo-grupo">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" id="nombre" name="nombre" required />
+              </div>
+  
+              <div class="campo-grupo">
+                <label for="correo">CORREO</label>
+                <input type="email" id="correo" name="correo" required />
+              </div>
+  
+              <div class="campo-grupo">
+                <label for="comentario">COMENTARIO</label>
+                <textarea
+                  id="comentario"
+                  name="comentario"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+  
+              <button type="submit" class="boton">
+                  <img
+                  src="imagenes/boton_boton.svg"
+                  alt="Botón"
+                  class="btn-icono"
+                />
+                ENVIAR
+  
+              </button>
+            </form>
+          </section>
+  
+          <!-- SECCIÓN DERECHA: REDES Y COMPRA -->
+          <div class="info-derecha-container">
+            <!-- HABLA CON NOSOTROS (Caja Amarilla Organica) -->
+            <div class="social-box">
+              <div class="texto-blob">
+                <h4>HABLA CON NOSOTROS</h4>
+              <ul class="social-list">
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="ri-instagram-line"></i> Instagram</a
+                  >
+                </li>
+              <li>
+                  <a href="#" target="_blank">
+                  <i class="ri-facebook-fill"></i> Facebook
+                      </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="ri-tiktok-fill"></i> Tik Tok</a
+                  >
+                </li>
+              </ul>
+
+              </div>
+            </div>
+  
+            <!-- COMPRA NUESTROS PRODUCTOS -->
+            <div class="compra-box">
+              <h4>COMPRA NUESTROS PRODUCTOS</h4>
+              <p>
+                Encuentra a tu nuevo mejor amigo y únete a la familia de
+                Carnalitos.
+              </p>
+              <div class="marketplaces-logos">
+                <a href="#" target="_blank"
+                  ><img src="imagenes/contacto/logo_walmart.webp" alt="Walmart"
+                /></a>
+                <a href="#" target="_blank"
+                  ><img
+                    src="imagenes/contacto/logo_mercadolibre.webp"
+                    alt="Mercado Libre"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+
+    <!-- FOOTER -->
+    <footer class=".sombra-morada">
+      <div class="footer-contenido">
+        <div class="footer-col">
+          <a href="#" class="logo-link">
+            <img src="imagenes/Carnalitos_Logo.webp" alt="Carnalitos" class="logo-imagen">
+          </a>
+        </div>
+        <div class="footer-col">
+          <h5>PÁGINAS</h5>
+          <ul>
+            <li><a href="#" class="texto-chico">Quiénes somos</a></li>
+            <li><a href="#" class="texto-chico">Nuestros productos</a></li>
+            <li><a href="#" class="texto-chico">Nuestra inspiración</a></li>
+            <li><a href="#" class="texto-chico">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>CONTACTO</h5>
+          <ul>
+            <li>
+              <a href="#" class="texto-chico"><i class="ri-instagram-line"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="texto-chico"><i class="ri-facebook-fill"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="texto-chico"><i class="ri-tiktok-fill"></i> Tik Tok</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-patron">
+          <img
+          src="imagenes/patron_footer.webp"
+          width="100%"
+          height="auto"
+          >
+      </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

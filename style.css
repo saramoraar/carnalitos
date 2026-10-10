@@ -1,78 +1,423 @@
 :root {
-  --color-amarillo: #E8AC24;
-  --color-rosa: #E84F92;
-  --color-morado-base: #8A4A90;
-  --color-morado-oscuro: #472A4F;
-  --color-verde: #DBF6EB;
-  --color-blanco: #FFFFFF;
-  --color-fondo: #FFF5E4;
+  --color-amarillo: #e8ac24;
+  --color-rosa: #e84f92;
+  --color-morado-base: #8a4a90;
+  --color-morado-oscuro: #472a4f;
+  --color-verde: #dbf6eb;
+  --color-blanco: #FFFBF3;
+  --color-fondo: #fff5e4;
 }
 
 @font-face {
-  font-family: 'FuturaBook';
-  src: url('tipografia/Futura-Book.ttf') format('ttf');
+  font-family: "FuturaBook";
+  src: url("/tipografia/Futura-Book.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-}   
-
+}
 
 body {
-    background-color: var(--color-fondo);
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-h1{
-font-family: "Coiny", system-ui;
+h1 {
+  font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
-font-size: 6.9rem;
-color: var(--color-morado-base);
+  font-size: 5rem;
+  color: var(--color-morado-base);
 }
 
-h2{
-    font-family: "Coiny", system-ui;
+h2 {
+  font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
-font-size: 5.8rem;
-color: var(--color-morado-base);
+  font-size: 4.5rem;
+  color: var(--color-morado-base);
 }
 
-h3{
-    font-family: "Coiny", system-ui;
+h3 {
+  font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
-font-size: 4.4rem;
-color: var(--color-morado-base);
+  font-size: 1.5rem;
+  color: var(--color-morado-base);
 }
 
-h4{
-    font-family: "Coiny", system-ui;
+h4 {
+  font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
-font-size: 3.3rem;
-color: var(--color-morado-base);
+  font-size: 2.5rem;
+  color: var(--color-morado-base);
+  line-height:1;
 }
 
-h5, nav a{ /* ESTE ES EL HEADER Y BOTONES*/
-    font-family: "Coiny", system-ui;
+h5,
+nav a {
+  /* ESTE ES EL HEADER Y BOTONES*/
+  font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
-font-size: 2rem;
-color: var(--color-morado-base);
+  font-size: 1.4rem;
+  color: var(--color-morado-base);
+  text-decoration: none;
+  line-height: 0;
 }
 
-a:hover{
-    color: var(--color-amarillo);
+a:hover {
+  color: var(--color-rosa);
 }
 
 p {
-    font-family: "FuturaBook", sans-serif;
-    font-style: normal;
-    font-size: 2.3rem;
+  font-family: "FuturaBook", "Jost";
+  font-style: normal;
+  font-size: 1.8rem;
+  color: var(--color-morado-oscuro);
+  font-weight: 300;
 }
 
 .texto-chico {
-    font-family: "FuturaBook", sans-serif;
-    font-style: normal;
-    font-size: 2.3rem;
+  font-family: "FuturaBook", "Jost";
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
+.sombra-morada {
+  box-shadow: 0 2px 4px rgba(71, 42, 79, 0.15);
+}
+
+.contenido {
+  padding: 0% 2%;
+  transform: translateY(-20%);
+}
+
+a {
+  text-decoration: none;
+  font-family: "FuturaBook", "Jost";
+  font-style: normal;
+  font-size: 1.8rem;
+  color: var(--color-morado-oscuro);
+  font-weight: 300;
+}
+
+.boton {
+  background: var(--color-morado-base);
+  border: none;
+  border-radius: 200px;
+  outline: var(--color-rosa) dashed 2px;
+  outline-offset: -6px;
+  padding: 1% 5%;
+  text-align: center;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  text-decoration: none;  color: var(--color-blanco);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+.boton:active {
+  background-color: var(--color-verde);
+  color: var(--color-rosa);
+}
+
+.boton:hover .btn-icono {
+  transform: rotate(45deg);
+}
+
+.boton:hover{
+  transform: translateY(2%);
+}
+
+.btn-icono {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.texto-blob{
+  text-align:left;
+  padding: 10% 0% 10% 12% ;
+}
+
+/*-----HEADER------*/
+header {
+  background-color: var(--color-blanco);
+  background-image: url(imagenes/textura_lienzo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  width: 100%;
+}
+
+.header-container {
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.logo-imagen {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+nav {
+  width: 80%;
+  gap: 4%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*-----FOOTER------*/
+footer {
+  background-color: var(--color-blanco);
+  background-image: url(imagenes/textura_lienzo.webp);
+  margin-top: 4rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.footer-patron {
+  width: 60%;
+  overflow: hidden;
+  max-height: 270px;
+}
+
+.footer-patron img {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/*-----CONTACTO------*/
+
+.titulo-seccion-container {
+  margin-bottom: 3rem;
+  padding: 6% 5%;
+  background-image: url(imagenes/contacto/peces.webp);
+  background-size: 90%;
+  background-position: left 60%;
+  background-repeat: no-repeat;
+}
+
+/* GRID PRINCIPAL */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* FORMULARIO TARJETA */
+.formulario-card {
+  background-color: var(--color-morado-oscuro);
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.campo-grupo {
+  margin-bottom: 1.8rem;
+}
+
+.campo-grupo label {
+  display: block;
+  font-family: "Coiny", system-ui;
+  color: var(--color-blanco);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+  width: 100%;
+  background-color: var(--color-blanco);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-family: "FuturaBook", "Jost" ;
+  font-size: 1rem;
+  color: var(--color-morado-oscuro);
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+  outline: 4px dashed var(--color-amarillo);
+  outline-offset: -2px;
+  background-color: #EEE9DF;
+}
+
+.campo-grupo input:hover,
+.campo-grupo textarea:hover {
+  outline: 4px dashed var(--color-amarillo);
+  outline-offset: -2px;
+}
+
+
+/* COLUMNA DERECHA */
+.info-derecha-container {
+  display: flex;
+  padding:0;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.social-box {
+  width:100%;
+  padding: 3rem;
+  overflow:visible;
+  text-align: center;
+  background: url(imagenes/contacto/c1_amarillo.png)center / 100% no-repeat;
+}
+
+.social-box h4, .social-box a{
+  color:#D59C1B;
+}
+
+.social-box a:hover{
+  color:var(--color-rosa);
+}
+
+.social-box h4{
+  line-height: 0;
+}
+
+
+.social-list {
+  list-style: none;
+  padding-left:5%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap:0.1rem;
+}
+
+
+/* COMPRA NUESTROS PRODUCTOS */
+
+.compra-box{
+  padding-left:10%;
+}
+
+.marketplaces-logos {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.marketplaces-logos img {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Celulares grandes / Tablets pequeñas */
+@media (min-width: 0px) and (max-width: 767px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+.contenido {
+  transform: translateY(0%);
+  padding: 2% 8%;
+}
+
+.titulo-seccion-container {
+  background-size: cover;
+}
+}
+
+/* Tablets estándar */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.contenido {
+  transform: translateY(0%);
+  padding: 2% 8%;
+}
+
+.titulo-seccion-container {
+  background-size: cover;
+}
+
+/* Laptops / Escritorio estándar */
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+/* Escritorio grande */
+@media (min-width: 1280px) and (max-width: 1535px) {
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 1536px) {
+}
