@@ -405,17 +405,6 @@ text-align: center;
   position:relative;
 }
 
-/*-----CONTACTO------*/
-
-.titulo-seccion-container {
-  margin-bottom: 3rem;
-  padding: 6% 5%;
-  background-image: url(imagenes/contacto/peces.webp);
-  background-size: 90%;
-  background-position: left 60%;
-  background-repeat: no-repeat;
-}
-
 /* GRID PRINCIPAL */
 .contacto-grid {
   display: grid;
@@ -655,6 +644,40 @@ text-align: center;
   background-repeat: no-repeat;
   padding: 5% 0%;
 }
+
+/*-----INSPIRACION------*/
+.inspiracion-main .titulo-seccion-container{
+  padding: 15% 5%;
+  background-image: url(imagenes/inspiracion/inspo7.webp);
+  background-size: cover;
+  background-position: left 80%;
+  background-repeat: no-repeat;
+  margin:0;
+  text-align:center;
+}
+
+.columna-imagen-g{
+  width:55%;
+}
+
+.columna-texto-izq-xs {
+  width: 40%;
+  padding-left: 6%;
+  box-sizing: border-box;
+}
+
+.columna-texto-der-xs {
+  width: 40%;
+  padding-right: 6%;
+  box-sizing: border-box;
+}
+
+.aqui-fondo .columnas{
+  margin-bottom:15%;
+  justify-content: space-between;
+}
+
+
 
 /*-----MEDIA QUERIES------*/
 
