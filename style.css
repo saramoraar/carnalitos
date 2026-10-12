@@ -19,6 +19,7 @@
   font-style: normal;
 }
 
+
 body {
   background-color: var(--color-fondo);
   margin: 0;
@@ -33,7 +34,7 @@ h1 {
   font-style: normal;
   font-size: 3.5rem;
   color: var(--color-morado-base);
-  line-height:0.98;
+  line-height: 0.98;
   text-transform: uppercase;
 }
 
@@ -73,7 +74,7 @@ nav a {
   font-size: 1.4rem;
   color: var(--color-morado-base);
   text-decoration: none;
-  line-height: 0;
+  line-height: 1;
 }
 
 .rosa {
@@ -104,9 +105,13 @@ a:hover {
 p {
   font-family: "FuturaBook", "Jost";
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: var(--color-morado-oscuro);
   font-weight: 300;
+}
+
+.bold{
+  font-weight:600;
 }
 
 /*-----BOTONES------*/
@@ -118,8 +123,8 @@ p {
   outline: var(--color-rosa) dashed 2px;
   outline-offset: -6px;
   padding: 3% 10%;
-  width:250px;
-  height:70px;
+  width: 250px;
+  height: 70px;
   font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -155,7 +160,7 @@ p {
 }
 
 .shifted-text {
-  margin-top:3%;
+  margin-top: 3%;
 }
 
 /*-----RECURSOS RECURRENTES------*/
@@ -235,11 +240,11 @@ p {
   box-sizing: border-box;
 }
 
-.columna-imagen-tercio{
+.columna-imagen-tercio {
   width: 33%;
 }
 
-.columna-imagen-tercio:nth-of-type(2){
+.columna-imagen-tercio:nth-of-type(2) {
   margin-top: 6%;
 }
 
@@ -283,8 +288,8 @@ nav {
 footer {
   background-color: var(--color-blanco);
   background-image: url(imagenes/textura_lienzo.webp);
-  margin-top: 4rem;
   margin-bottom: 0;
+  margin-top: 4rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -323,7 +328,7 @@ footer {
 .footer-patron {
   width: 60%;
   overflow: hidden;
-  max-height: 370px;
+  max-height: 300px;
 }
 
 .footer-patron img {
@@ -338,6 +343,11 @@ footer {
     rgba(0, 0, 0, 1) 100%
   );
 }
+
+.footer-fondo{
+  margin-top:0;
+}
+
 /*-----INICIO------*/
 .hero-imagen {
   width: 100%;
@@ -346,63 +356,60 @@ footer {
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
-  
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
-.sobre-nosotros{
-  padding-right:6%;
-  padding-top:5%;
+.sobre-nosotros {
+  padding-right: 6%;
+  padding-top: 5%;
 }
 
-.acomodar{
+.acomodar {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
 }
 
-.personajes{
-    padding: 0% 5%;
+.personajes {
+  padding: 0% 5%;
 }
 
-.inspiracion{
-  margin-top:8%;
+.inspiracion {
+  margin-top: 8%;
 }
 
-.columna-imagen-s{
-  width:40%;
+.columna-imagen-s {
+  width: 35%;
   position: absolute;
 }
 
-.columna-imagen-s:nth-of-type(1){
-top:2%;
-left:-8%;
+.columna-imagen-s:nth-of-type(1) {
+  top: 2%;
+  left: -8%;
 }
 
-.columna-imagen-s:nth-of-type(3){
-  top:2%;
-  right:-3%;
+.columna-imagen-s:nth-of-type(3) {
+  top: 2%;
+  right: -3%;
 }
 
-.columna-texto-alt{
-  width:45%;
-  display:flex;
+.columna-texto-alt {
+  width: 50%;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.columna-texto-alt h1{
-text-align: center;
+.columna-texto-alt h1 {
+  text-align: center;
 }
 
 .columnas-alt {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   padding: 0%;
-  position:relative;
+  position: relative;
 }
 
 /* GRID PRINCIPAL */
@@ -580,40 +587,40 @@ text-align: center;
   align-items: center;
 }
 
-.contenido-alt{
-  width:100%;
-  padding:0% 8%;
+.contenido-alt {
+  width: 100%;
+  padding: 0% 8%;
   box-sizing: border-box;
 }
 
-.contenido-alt .columna-texto{
-  width:75%;
+.contenido-alt .columna-texto {
+  width: 75%;
   box-sizing: border-box;
   padding-left: 5%;
 }
 
-.titulo{
+.titulo {
   text-align: right;
-  margin-right:30%;
+  margin-right: 30%;
 }
 
-.blob_valor{
+.blob_valor {
   padding: 3% 0%;
   box-sizing: border-box;
   width: 25%;
   overflow: visible;
   text-align: center;
-  background: url(imagenes/sobre_nosotros/f_amarillo.png) center center /
-    60% no-repeat;
+  background: url(imagenes/sobre_nosotros/f_amarillo.png) center center / 60%
+    no-repeat;
 }
 
-.blob_valor .texto-blob{
+.blob_valor .texto-blob {
   text-align: center;
   padding-top: 5%;
   padding-left: 2%;
 }
 
-#honestidad{
+#honestidad {
   background-image: url(imagenes/sobre_nosotros/c1.png);
   background-size: 100%;
   background-position: center;
@@ -621,11 +628,11 @@ text-align: center;
   padding: 5% 0%;
 }
 
-#honestidad .texto-blob{
+#honestidad .texto-blob {
   padding-top: 10%;
 }
 
-#calidad{
+#calidad {
   background-image: url(imagenes/sobre_nosotros/a_amarillo.png);
   background-size: 80%;
   background-position: center;
@@ -633,11 +640,11 @@ text-align: center;
   padding: 5% 0%;
 }
 
-#calidad .texto-blob{
+#calidad .texto-blob {
   padding-top: 10%;
 }
 
-.filosofia-empresarial{
+.filosofia-empresarial {
   background-image: url(imagenes/sobre_nosotros/ballena_10.webp);
   background-size: 80%;
   background-position: left bottom;
@@ -646,18 +653,18 @@ text-align: center;
 }
 
 /*-----INSPIRACION------*/
-.inspiracion-main .titulo-seccion-container{
+.inspiracion-main .titulo-seccion-container {
   padding: 15% 5%;
   background-image: url(imagenes/inspiracion/inspo7.webp);
   background-size: cover;
   background-position: left 80%;
   background-repeat: no-repeat;
-  margin:0;
-  text-align:center;
+  margin: 0;
+  text-align: center;
 }
 
-.columna-imagen-g{
-  width:55%;
+.columna-imagen-g {
+  width: 55%;
 }
 
 .columna-texto-izq-xs {
@@ -672,12 +679,21 @@ text-align: center;
   box-sizing: border-box;
 }
 
-.aqui-fondo .columnas{
-  margin-bottom:15%;
+.aqui-fondo{
+  background-image: url("imagenes/inspiracion/Arbolote.webp");
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-bottom:4rem;
+}
+
+.aqui-fondo .columnas {
+  margin-bottom: 15%;
   justify-content: space-between;
 }
 
-
+.aqui-fondo .columnas:last-of-type{
+  margin-bottom: 0%;
+}
 
 /*-----MEDIA QUERIES------*/
 
@@ -825,8 +841,15 @@ text-align: center;
   .nosotros .titulo-seccion-container {
     max-height: 10000px;
   }
-  .nosotros .titulo-imagen{
-    margin-bottom:6%;
+  .nosotros .titulo-imagen {
+    margin-bottom: 6%;
+  }
 
+  .columna-imagen-s:nth-of-type(1) {
+    top: -20%;
+  }
+
+  .columna-imagen-s:nth-of-type(3) {
+    top: -20%;
   }
 }
