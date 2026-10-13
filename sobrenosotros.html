@@ -18,22 +18,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/webp" href="imagenes/Carnalitos_Logo.webp">
+    <link rel="icon" type="image/png" href="imagenes/favicon-2.png">
   </head>
 
 
   <body>
-    <header class="sombra-morada">
+  <header class="sombra-morada">
       <div class="header-container">
         <a href="index.html" class="logo-link">
           <img src="imagenes/Carnalitos_Logo.webp" alt="Carnalitos" class="logo-imagen">
         </a>
         <nav>
+        <button class="menu-close-btn" aria-label="Cerrar menú">
+          <i class="ri-close-line"></i>
+        </button>
           <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
           <a href="productos.html">NUESTROS PRODUCTOS</a>
           <a href="inspiracion.html">NUESTRA INSIPIRACIÓN</a>
           <a href="contacto.html">CONTACTO</a>
         </nav>
+
+        <button class="menu-toggle-btn" aria-label="Abrir menú">
+          <i class="ri-menu-line"></i>
+        </button>
 
       </div>
     </header>
@@ -54,8 +61,8 @@
             <h1 class="rosa">¿Sabes qué son los alebrijes?</h1>
             <p>Son seres imaginarios que se originaron a partir de un extraño sueño que tuvo Pedro Linares en el año de 1936. Figuras fantásticas que combinan distintos animales y se caracterizan por estar pintados de colores vibrantes y vistosos. Que fomentan la imaginación y sirven como amuletos o protectores espirituales, guiando a las almas.
             </p>
-  <p><br></br>Hechos principalmente de carton y papel (mediante técnicas de cartonería), para posterior mente ser cubiertos con engrudo, para finalmente ser pintados a mano.
-  </p>
+            <p><br></br>Hechos principalmente de carton y papel (mediante técnicas de cartonería), para posterior mente ser cubiertos con engrudo, para finalmente ser pintados a mano.
+            </p>
           </div>
           <div class="columna-imagen">
             <img
@@ -63,6 +70,7 @@
               alt="Alebrije"
               width="100%"
               height="auto"
+              class="movil-hide"
             />
           </div>
         </div>
@@ -84,9 +92,7 @@
             <p><br/>Basados en la idea original de alebrijes, se crearon nuevos diseños tomando en cuenta especies endémicas de México para crear animales fantásticos que ayuden a reintroducir estos mismos al público joven mexicano- los cuales busquen expresar su identidad a través de accesorios coleccionables.</p>
           </div>
         </div>
-      </main>
-</section>
-
+      </section>      
 <section class="filosofia-empresarial">
   <div class="columnas">
     <div class="columna-texto-dinamico">
@@ -109,8 +115,7 @@
         </div>
         </div>
         <div class="columna-texto">
-          <p>Llevar a los alebrijes a un público moderno a través de divertidas blind box con llaveros de personajes originales.</p>
-        </div>
+          <p>Dar visibilidad a especies endémicas mexicanas en peligro de extinción, resaltando  la biodiversidad natural del país  y al mismo tiempo popularizando entre las nuevas generaciones el ícono cultural mexicano de los alebrijes.</p>
       </div>
     </div>
     <div class="columna-imagen-xs">
@@ -119,6 +124,7 @@
         alt="blobs"
         width="100%"
         height="auto"
+        class="movil-hide"
         >   
     </div>
   </div>
@@ -158,6 +164,9 @@
       </div>
   </div>
 </section>
+
+      </main>
+
 <!-- FOOTER -->
     <footer class="sombra-morada-footer">
       <div class="footer-contenido">
@@ -198,6 +207,7 @@
       </div>
         </div>
     </footer>
+    <div class="menu-overlay"></div>
     <script src="script.js"></script>
   </body>
   </html>

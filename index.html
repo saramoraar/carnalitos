@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>Inicio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/webp" href="imagenes/Carnalitos_Logo.webp">
+    <link rel="icon" type="image/png" href="imagenes/favicon-3.png">
   </head>
+
 <body>
   <header class="sombra-morada">
       <div class="header-container">
@@ -27,11 +28,18 @@
           <img src="imagenes/Carnalitos_Logo.webp" alt="Carnalitos" class="logo-imagen">
         </a>
         <nav>
+        <button class="menu-close-btn" aria-label="Cerrar menú">
+          <i class="ri-close-line"></i>
+        </button>
           <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
           <a href="productos.html">NUESTROS PRODUCTOS</a>
           <a href="inspiracion.html">NUESTRA INSIPIRACIÓN</a>
           <a href="contacto.html">CONTACTO</a>
         </nav>
+
+        <button class="menu-toggle-btn" aria-label="Abrir menú">
+          <i class="ri-menu-line"></i>
+        </button>
 
       </div>
     </header>
@@ -53,16 +61,17 @@
               alt="Alebrije"
               width="100%"
               height="auto"
+              class="movil-hide"
             />
           </div>
           <div class="columna-texto-der acomodar">
             <h1 class="amarillo">Sobre nosotros</h1>
-            <p>Carnalitos un emprendimiento mexicano que busca llevar los alebrijes 
+            <p class="txt-arriba">Carnalitos un emprendimiento mexicano que busca llevar los alebrijes 
               hasta ti en divertidas blind box con llaveros de personajes originales.
             </p>
             <a href="sobrenosotros.html">
                 <button class="boton">
-               <img
+                <img
                   src="imagenes/boton_boton.svg"
                   alt="Botón"
                   class="btn-icono"
@@ -74,7 +83,7 @@
           
           </div>
           </div>
-       </section>
+      </section>
 
       <section class="personajes acomodar">
           <h1>Nuestros Personajes</h1>
@@ -115,11 +124,11 @@
             </button>
 
             </a>
-       </section>
+      </section>
 
       <section class="inspiracion">
         <div class="columnas-alt">
-                  <div class="columna-imagen-s">
+          <div class="columna-imagen-s">
           <img 
           src="imagenes/inicio/inicio2.webp" 
           alt="mariposa monarca"
@@ -167,7 +176,7 @@
 
     </main>
 
-           <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="sombra-morada-footer">
       <div class="footer-contenido">
         <div class="footer-col">
@@ -178,7 +187,7 @@
         <div class="footer-col">
           <h5>PÁGINAS</h5>
           <ul>
-           <li><a href="sobrenosotros.html" class="texto-chico">Sobre Nosotros</a></li>
+            <li><a href="sobrenosotros.html" class="texto-chico">Sobre Nosotros</a></li>
             <li><a href="productos.html" class="texto-chico">Nuestros productos</a></li>
             <li><a href="inspiracion.html" class="texto-chico">Nuestra inspiración</a></li>
             <li><a href="contacto.html" class="texto-chico">Contacto</a></li>
@@ -207,7 +216,7 @@
       </div>
         </div>
     </footer>
-
+  <div class="menu-overlay"></div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -18,21 +18,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/webp" href="imagenes/Carnalitos_Logo.webp">
+    <link rel="icon" type="image/png" href="imagenes/favicon-4.png">
   </head>
 
   <body>
-    <header class="sombra-morada">
+  <header class="sombra-morada">
       <div class="header-container">
         <a href="index.html" class="logo-link">
           <img src="imagenes/Carnalitos_Logo.webp" alt="Carnalitos" class="logo-imagen">
         </a>
         <nav>
+        <button class="menu-close-btn" aria-label="Cerrar menú">
+          <i class="ri-close-line"></i>
+        </button>
           <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
           <a href="productos.html">NUESTROS PRODUCTOS</a>
           <a href="inspiracion.html">NUESTRA INSIPIRACIÓN</a>
           <a href="contacto.html">CONTACTO</a>
         </nav>
+
+        <button class="menu-toggle-btn" aria-label="Abrir menú">
+          <i class="ri-menu-line"></i>
+        </button>
 
       </div>
     </header>
@@ -88,7 +95,7 @@
             <div class="social-box">
               <div class="texto-blob">
                 <h4>HABLA CON NOSOTROS</h4>
-              <ul class="social-list">
+              <ul class="social-list txt-arriba">
                 <li>
                   <a href="#" target="_blank"
                     ><i class="ri-instagram-line"></i> Instagram</a
@@ -117,10 +124,10 @@
                 Carnalitos.
               </p>
               <div class="marketplaces-logos">
-                <a href="#" target="_blank"
+                <a href="https://www.walmart.com.mx/" target="_blank"
                   ><img src="imagenes/contacto/logo_walmart.svg" alt="Walmart"
                 /></a>
-                <a href="#" target="_blank"
+                <a href="https://www.mercadolibre.com.mx/" target="_blank"
                   ><img
                     src="imagenes/contacto/logo_mercadolibre.svg"
                     alt="Mercado Libre"
@@ -173,6 +180,9 @@
       </div>
         </div>
     </footer>
+
+        <div class="menu-overlay"></div>
+
 
     <script src="script.js"></script>
   </body>
