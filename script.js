@@ -58,25 +58,54 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener("click", closeMenu);
     });
   });
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.querySelector(".menu-overlay");
+  if (!overlay) return;
 
-  // Esperamos a que los elementos estén listos
-const btnAbrir = document.getElementById("nadxieli");
-const btnCerrar = document.getElementById("cerrarPopup");
-const popup = document.getElementById("popup-nadxieli");
-const overlay = document.querySelector(".menu-overlay");
+  // Lista de configuraciones para cada popup (btnAbrir y su respectivo popup)
+  const popupsConfig = [
+    { btnId: "nadxieli", popupId: "popup-nadxieli" },
+    { btnId: "shiaa", popupId: "popup-shiaa" },
+    { btnId: "sicaru", popupId: "popup-sicaru" },
+    { btnId: "stalee", popupId: "popup-stalee" },
+    { btnId: "belegui", popupId: "popup-belegui" },
+    { btnId: "naayase", popupId: "popup-naayase" },
+  ];
 
+  // Recorremos cada configuración para aplicarles la lógica automáticamente
+  popupsConfig.forEach((item) => {
+    const btnAbrir = document.getElementById(item.btnId);
+    const popup = document.getElementById(item.popupId);
 
-// Mostrar el popup quitando la clase de oculto
-btnAbrir.addEventListener("click", () => {
-  popup.classList.remove("oculto");
-  overlay.classList.add("is-active");
+    if (btnAbrir && popup) {
+      // Buscamos el botón de cierre DENTRO de este popup específico usando su clase
+      const btnCerrar = popup.querySelector(".btn-cerrar-popup");
 
-});
+      const abrir = () => {
+        popup.classList.remove("oculto");
+        overlay.classList.add("is-active");
+      };
 
-// Ocultar el popup volviendo a añadir la clase
-btnCerrar.addEventListener("click", () => {
-  popup.classList.add("oculto");
-  overlay.classList.remove("is-active");
+      const cerrar = () => {
+        popup.classList.add("oculto");
+        overlay.classList.remove("is-active");
+      };
 
+      // Eventos de apertura y cierre
+      btnAbrir.addEventListener("click", abrir);
+
+      if (btnCerrar) {
+        btnCerrar.addEventListener("click", cerrar);
+      }
+
+      // Cierra este popup específico al hacer clic en el overlay (fondo oscuro)
+      overlay.addEventListener("click", () => {
+        // Solo actúa si este popup en particular está abierto actualmente
+        if (!popup.classList.contains("oculto")) {
+          cerrar();
+        }
+      });
+    }
+  });
 });
 
