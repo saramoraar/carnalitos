@@ -58,3 +58,25 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener("click", closeMenu);
     });
   });
+
+  // Esperamos a que los elementos estén listos
+const btnAbrir = document.getElementById("nadxieli");
+const btnCerrar = document.getElementById("cerrarPopup");
+const popup = document.getElementById("popup-nadxieli");
+const overlay = document.querySelector(".menu-overlay");
+
+
+// Mostrar el popup quitando la clase de oculto
+btnAbrir.addEventListener("click", () => {
+  popup.classList.remove("oculto");
+  overlay.classList.add("is-active");
+
+});
+
+// Ocultar el popup volviendo a añadir la clase
+btnCerrar.addEventListener("click", () => {
+  popup.classList.add("oculto");
+  overlay.classList.remove("is-active");
+
+});
+
