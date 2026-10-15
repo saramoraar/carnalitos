@@ -193,14 +193,14 @@ p {
 }
 
 .contacto .titulo-seccion-container {
-  background-image: url(imagenes/contacto/peces.webp);
+  background-image: url(imagenes/contacto/peces.png);
   background-size: 100%;
   background-position: left 60%;
   background-repeat: no-repeat;
 }
 
 .nosotros .titulo-seccion-container {
-  background-image: url(imagenes/sobre_nosotros/qs1png.WEBP);
+  background-image: url(imagenes/sobre_nosotros/qs1png.png);
   background-size: cover;
   margin-bottom: 0rem;
   padding-top: 20%;
@@ -292,7 +292,7 @@ p {
 /*-----HEADER------*/
 header {
   background-color: var(--color-blanco);
-  background-image: url(imagenes/textura_lienzo.webp);
+  background-image: url(imagenes/textura_lienzo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@ nav {
 
 footer {
   background-color: var(--color-blanco);
-  background-image: url(imagenes/textura_lienzo.webp);
+  background-image: url(imagenes/textura_lienzo.png);
   margin-bottom: 0;
   margin-top: 4rem;
   background-size: cover;
@@ -419,9 +419,9 @@ footer {
 }
 
 .footer-patron {
-  width: 60%;
+  width: 50%;
   overflow: hidden;
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .footer-patron img {
@@ -737,7 +737,7 @@ footer {
 }
 
 .filosofia-empresarial {
-  background-image: url(imagenes/sobre_nosotros/ballena_10.webp);
+  background-image: url(imagenes/sobre_nosotros/ballena_10.png);
   background-size: 80%;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -747,7 +747,7 @@ footer {
 /*-----INSPIRACION------*/
 .inspiracion-main .titulo-seccion-container {
   padding: 15% 5%;
-  background-image: url(imagenes/inspiracion/inspo7.webp);
+  background-image: url(imagenes/inspiracion/inspo7.png);
   background-size: cover;
   background-position: left 80%;
   background-repeat: no-repeat;
@@ -772,7 +772,7 @@ footer {
 }
 
 .aqui-fondo {
-  background-image: url("imagenes/inspiracion/Arbolote.webp");
+  background-image: url("imagenes/inspiracion/Arbolote.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 4rem;
@@ -845,7 +845,7 @@ footer {
   bottom: -25%;
 }
 
-#belegui, #stalee {
+.productos #belegui, .productos #stalee {
   height:250px;
 }
 
@@ -1074,7 +1074,7 @@ footer {
     width: 280px; /* Ancho del menú lateral */
     height: 100vh;
     background-color: var(--color-blanco);
-    background-image: url(imagenes/textura_lienzo.webp);
+    background-image: url(imagenes/textura_lienzo.png);
     background-size: cover;
     flex-direction: column;
     align-items: flex-start;
@@ -1317,17 +1317,24 @@ footer {
 
   .footer-patron {
     width: 40%;
-    max-height: 200px;
+    max-height: 300px;
   }
 
   .columna-imagen-tercio{
-   width:25%;
-   padding: 0% 10%;
+   width:50%;
+
+  }
+
+   .footer-patron{
+    width:45%;
   }
 }
 
 /* Escritorio grande */
 @media (min-width: 1280px) and (max-width: 1535px) {
+  .footer-patron{
+    width:45%;
+  }
 }
 
 /* Pantallas extra grandes */
